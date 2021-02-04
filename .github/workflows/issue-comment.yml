@@ -1,9 +1,8 @@
 name: Git Action Flow
-
 on:
   push:
-  issues: [opened]
-
+  issues: 
+    types: [opened]
 
 jobs:
   comment:

@@ -12,6 +12,5 @@ jobs:
     - name: Add funny gif
       id: funnyGif
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
+        GIPHY_TOKEN: ${{GIPHY_TOKEN}}
         comment_type: 'gif'

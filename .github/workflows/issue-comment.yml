@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Add funny gif
-      uses: jonjhmoon/Lab5_PartyHorn@v0
+      uses: jonjhmoon/Lab5_PartyHorn@v1
       id: funnyGif
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

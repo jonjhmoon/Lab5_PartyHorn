@@ -1,0 +1,17 @@
+name: Git Action Flow
+
+on:
+  push:
+  issues: [opened]
+
+
+jobs:
+  comment:
+    if: github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Add funny gif
+    - id: funny gif
+    - with:
+        GIPHY_TOKEN: ${{ secrets.vtF7bGSEazsaxgyqksAPMWRxeOUf3E7Z }}
+        comment_type: 'gif'

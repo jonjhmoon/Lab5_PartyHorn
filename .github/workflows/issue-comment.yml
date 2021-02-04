@@ -1,5 +1,6 @@
 name: Git Action Flow
 on:
+  push:
   issues: 
     types: [opened]
 
@@ -9,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Add funny gif
-      id: funny gif
+      id: funnyGif
       with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
         comment_type: 'gif'

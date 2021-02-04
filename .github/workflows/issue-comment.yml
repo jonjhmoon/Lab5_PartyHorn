@@ -13,5 +13,5 @@ jobs:
     - name: Add funny gif
     - id: funny gif
     - with:
-        GIPHY_TOKEN: ${{ secrets.vtF7bGSEazsaxgyqksAPMWRxeOUf3E7Z }}
+        GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
         comment_type: 'gif'
